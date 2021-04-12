@@ -1,5 +1,5 @@
 require("dotenv").config();
-const Seller = require("../models/Seller");
+const Seller = require("../models/seller");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const {sellerValidationSchema,loginValidationSchema} = require("./validations/validationSchema");
