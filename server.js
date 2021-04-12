@@ -36,6 +36,6 @@ app.use("/product", productRouter);
 app.use("/deliveryMan", deliveryManRouter);
 
 
-app.listen(process.env.PORT, () => {
-  console.log("connected to server " + process.env.PORT);
-});
+const port = process.env.PORT || 3000
+
+app.listen(port, () => console.log(`app is now listening at port ${port}`))
